@@ -16,5 +16,9 @@ export default createGlobalStyle`
         box-sizing: border-box;
         text-decoration: none;
     }
+
+    button{
+        border: none;
+    }
     
 `
