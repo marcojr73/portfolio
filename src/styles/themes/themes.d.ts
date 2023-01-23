@@ -8,6 +8,7 @@ declare module "styled-components" {
             backgroundColor: string;
             primary: string;
             secondary: string;
+            third: string;
         };
     }
 }
