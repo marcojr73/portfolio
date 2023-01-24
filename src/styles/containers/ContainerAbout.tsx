@@ -34,6 +34,10 @@ const ContainerAbout = styled.section`
         display: flex;
         justify-content: center;
         align-items: center;
+        align-self: flex-end;
+        margin-right: 5%;
+        margin-top: 5%;
+        font-size: 1.5rem;
     }
 
 `
