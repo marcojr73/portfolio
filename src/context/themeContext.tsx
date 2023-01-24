@@ -1,37 +1,11 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
-import React, { createContext, ReactNode, useState } from "react"
+import React, { createContext, useState } from "react"
+import { TProps, Ttheme } from "../interfaces"
 import darkTheme from "../styles/themes/darkTheme"
-
-type TProps = {
-    children: ReactNode
-}
 
 const initialValue = {
     theme: darkTheme,
     setTheme: () => { }
-}
-
-type Ttheme = {
-    theme: {
-        title: string;
-        colors: {
-            backgroundColor: string;
-            primary: string;
-            secondary: string;
-            third: string;
-            textColor: string;
-        };
-    },
-    setTheme: (newState: {
-        title: string;
-        colors: {
-            backgroundColor: string;
-            primary: string;
-            secondary: string;
-            third: string;
-            textColor: string;
-        };
-    },) => void
 }
 
 export const themeContext = createContext<Ttheme>(initialValue)

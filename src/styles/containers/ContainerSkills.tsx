@@ -13,7 +13,8 @@ const ContainerSkills = styled.section`
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        grid-gap: 1%;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
     }
 
     li{
@@ -30,8 +31,7 @@ const ContainerSkills = styled.section`
 
     li:hover{
         border-bottom: 10px solid var(--primary-color);
-
-        transition-duration: 0.5s;
+        transition-duration: 1s;
     }
     
     p{
