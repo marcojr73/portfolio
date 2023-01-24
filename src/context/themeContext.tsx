@@ -19,8 +19,7 @@ type Ttheme = {
             primary: string;
             secondary: string;
             third: string;
-            black: string;
-            white: string;
+            textColor: string;
         };
     },
     setTheme: (newState: {
@@ -30,8 +29,7 @@ type Ttheme = {
             primary: string;
             secondary: string;
             third: string;
-            black: string;
-            white: string;
+            textColor: string;
         };
     },) => void
 }

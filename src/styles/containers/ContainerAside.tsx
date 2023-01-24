@@ -52,17 +52,25 @@ const ContainerAside = styled.aside`
         width: 100%;
         height: 45vh;
         font-family: "Rajdhani";
-        color: white;
+        color: var(--text-color);
     }
 
     li{
         height: 15%;
         align-items: center;
         border-top: 1px solid var(--primary-color);
+        cursor: pointer;
     }
     
     li:last-child{
         padding-top: 13%;
+    }
+
+    .list-item:hover{
+        box-shadow: inset 0px 11px 8px -10px var(--primary-color),
+                    inset 0px -11px 8px -10px var(--primary-color); ;
+        transition-duration: 0.4s;
+        transition-timing-function: ease-in-out;
     }
     
     .icon{

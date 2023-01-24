@@ -1,9 +1,12 @@
 {
     "translation": {
-        "DevDescription": "Desenvolvedor full stack",
-        "Sobre": "Sobre",
-        "Habilidades": "Habilidades",
-        "Projetos": "Projetos",
-        "Contato": "Contato"
+        "dev-description": "Desenvolvedor full stack",
+        "sobre": "Sobre",
+        "habilidades": "Habilidades",
+        "projetos": "Projetos",
+        "contato": "Contato",
+        "bem-vindo": "Bem vindo!",
+        "bem-vindo-2": "É um prazer ter você aqui.",
+        "apresentacao": "Sou o Marquim, Desenvolvedor full stack, web e mobile, apaixonado por tecnologia, xadrez, livros e pelos segredos do universo, você pode encontrar algumas informações sobre mim nesta página."
     }
 }
