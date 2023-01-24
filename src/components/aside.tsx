@@ -9,6 +9,8 @@ import { themeContext } from "../context/themeContext"
 import darkTheme from "../styles/themes/darkTheme"
 import lightTheme from "../styles/themes/lightTheme"
 
+import me from "../assets/images/me.jpeg"
+
 function Aside(){
     const {t, i18n} = useTranslation()
     const {theme, setTheme } = useContext(themeContext)
@@ -20,7 +22,7 @@ function Aside(){
     return (
         <ContainerAside>
             <header>
-                <img src="src/assets/images/me.jpeg" alt="person"/>
+                <img src={me} alt="person"/>
                 <p className="acronyms">Marco jr</p>
                 <p>{t("dev-description")}</p>
             </header>

@@ -26,6 +26,15 @@ const ContainerAbout = styled.section`
         font-size: 1.5rem;
     }
 
+    a{
+        background-color: var(--primary-color);
+        width: 20%;
+        height: 15%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 `
 
