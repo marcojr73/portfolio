@@ -29,15 +29,15 @@ const ContainerAbout = styled.section`
     a{
         background-color: var(--primary-color);
         width: 20%;
-        height: 15%;
+        height: 100%;
         border-radius: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
-        align-self: flex-end;
         margin-right: 5%;
         margin-top: 5%;
         font-size: 1.5rem;
+        margin-left: 80%;
     }
 
 `
