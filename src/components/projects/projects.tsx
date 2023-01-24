@@ -9,8 +9,9 @@ function Projects(){
     return(
         <ContainerProjects>
             <h1 className="title">{t("Projects")}</h1>
-
-            <Project/>
+            <section className="projects-square" >
+                <Project/>
+            </section>
         </ContainerProjects>
     )
 }
