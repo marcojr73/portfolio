@@ -43,7 +43,7 @@ export default createGlobalStyle`
     .title{
         color: var(--text-color);
         font-size: 4rem;
-        padding-top: 10%;
+        padding-top: 8%;
         text-align: center;
     }
     

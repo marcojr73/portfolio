@@ -25,7 +25,7 @@ export default [
         icon: SiJavascript
     },
     {
-        title: "Styled-comp",
+        title: "Styled-C",
         icon: SiStyledcomponents
     },
     {
@@ -41,11 +41,11 @@ export default [
         icon: SiPostgresql
     },
     {
-        title: "Mongo db",
+        title: "Mongo",
         icon: SiMongodb
     },
     {
-        title: "Prisma ORM",
+        title: "Prisma",
         icon: SiPrisma
     },
     {
@@ -73,7 +73,7 @@ export default [
         icon: FaJava
     },
     {
-        title: "Spring boot",
+        title: "Spring",
         icon: SiSpring
     },
 ]
