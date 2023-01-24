@@ -39,5 +39,12 @@ export default createGlobalStyle`
         text-decoration: none;
         color: var(--text-color)
     }
+
+    .title{
+        color: var(--text-color);
+        font-size: 4rem;
+        padding-top: 10%;
+        text-align: center;
+    }
     
 `
