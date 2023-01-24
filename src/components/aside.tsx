@@ -22,13 +22,13 @@ function Aside(){
             <header>
                 <img src="src/assets/images/me.jpeg" alt="person"/>
                 <p className="acronyms">Marco jr</p>
-                <p>{t("DevDescription")}</p>
+                <p>{t("dev-description")}</p>
             </header>
             <ul>
-                <li key={"about"} >{t("Sobre")}</li>
-                <li key={"skills"} >{t("Habilidades")}</li>
-                <li key={"projects"} >{t("Projetos")}</li>
-                <li key={"contact"} >{t("Contato")}</li>
+                <li className="list-item" key={"about"} >{t("sobre")}</li>
+                <li className="list-item" key={"skills"} >{t("habilidades")}</li>
+                <li className="list-item" key={"projects"} >{t("projetos")}</li>
+                <li className="list-item" key={"contact"} >{t("contato")}</li>
                 <li key={"social"} >
                     <BsLinkedin className="icon" onClick={() => window.open("https://www.linkedin.com/in/marcojr73")}/>
                     <BsGithub className="icon" onClick={() => window.open("https://github.com/marcojr73")}/>
