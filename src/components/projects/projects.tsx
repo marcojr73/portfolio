@@ -9,20 +9,23 @@ import ngCashDto from "../../dtos/projects/ngCashDto"
 import tweterooDto from "../../dtos/projects/tweterooDto"
 import drivenPassDto from "../../dtos/projects/drivenPassDto"
 import linkrDto from "../../dtos/projects/linkrDto"
+import { Fade, Roll, Zoom } from "react-awesome-reveal"
 
 
-function Projects(){
-    const {t} = useTranslation()
-    return(
+function Projects() {
+    const { t } = useTranslation()
+    return (
         <ContainerProjects>
             <h1 className="title">{t("Projects")}</h1>
             <section className="projects-square" >
-                <Project project={geoQuizDto}/>
-                <Project project={wolfManager}/>
-                <Project project={ngCashDto}/>
-                <Project project={drivenPassDto}/>
-                <Project project={linkrDto}/>
-                <Project project={tweterooDto}/>
+                <Fade duration={2000} triggerOnce={true}>
+                    <Project project={geoQuizDto} />
+                    <Project project={wolfManager} />
+                    <Project project={ngCashDto} />
+                    <Project project={drivenPassDto} />
+                    <Project project={linkrDto} />
+                    <Project project={tweterooDto} />
+                </Fade>
             </section>
         </ContainerProjects>
     )
