@@ -36,7 +36,7 @@ function Contact() {
                             <MdOutlineMailOutline/>
                             <p>Email</p>
                         </div>
-                        <div className="social" onClick={() => window.open("")}>
+                        <div className="social" onClick={() => window.open("https://wa.me/5532984640142?")}>
                             <BsWhatsapp/>
                             <p>Whatsapp</p>
                         </div>
