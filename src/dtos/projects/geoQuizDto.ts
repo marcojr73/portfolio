@@ -1,7 +1,7 @@
-import geo1img1 from "../../../assets/images/geo-quiz/geo-quiz-screen-1.png"
-import geo1img2 from "../../../assets/images/geo-quiz/geo-quiz-screen-2.png"
-import geo1img3 from "../../../assets/images/geo-quiz/geo-quiz-screen-3.png"
-import geo1img4 from "../../../assets/images/geo-quiz/geo-quiz-screen-4.png"
+import geo1img1 from "../../assets/images/geo-quiz/geo-quiz-screen-1.png"
+import geo1img2 from "../../assets/images/geo-quiz/geo-quiz-screen-2.png"
+import geo1img3 from "../../assets/images/geo-quiz/geo-quiz-screen-3.png"
+import geo1img4 from "../../assets/images/geo-quiz/geo-quiz-screen-4.png"
 
 import {FaReact, FaNodeJs} from "react-icons/fa"
 import {SiTypescript, SiStyledcomponents, SiPostgresql, SiPrisma, SiJest, SiCypress, SiFlutter, SiDart} from "react-icons/si"

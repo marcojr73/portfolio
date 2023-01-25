@@ -58,11 +58,11 @@ const ContainerProjects = styled.section`
     }
 
     .icon:not(:first-child){
-        right: 3%;
+        right: 5%;
     }
 
     .icon:not(:last-child){
-        left: 3%;
+        left: 5%;
     }
 
     .description{

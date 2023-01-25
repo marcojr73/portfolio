@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next"
 import ContainerSkills from "../../styles/containers/ContainerSkills"
 import Skill from "./skill"
 
-import SkillsDto from "./SkillsDto"
+import SkillsDto from "../../dtos/skills/index.ts"
 
 function Skills() {
     const { t } = useTranslation()
