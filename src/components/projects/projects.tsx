@@ -16,7 +16,7 @@ function Projects() {
     const { t } = useTranslation()
     return (
         <ContainerProjects>
-            <h1 className="title">{t("Projects")}</h1>
+            <h1 className="title">{t("projetos")}</h1>
             <section className="projects-square" >
                 <Fade duration={2000} triggerOnce={true}>
                     <Project project={geoQuizDto} />

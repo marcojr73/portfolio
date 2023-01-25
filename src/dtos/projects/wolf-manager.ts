@@ -9,7 +9,7 @@ import { SiTypescript, SiNextdotjs, SiStyledcomponents, SiPostgresql, SiPrisma }
 
 export default {
     title: "Wolf-manager",
-    description: "Gerenciador de frente de caixa, você pode registrar a sua empresa, cadastrar os produtos, visualizar suas estatísticas de vendas e novos clientes dos ultimos 12 meses de forma segura e intuitiva.",
+    description: "wolf-description",
     pictures: [
         wolfimg1,
         wolfimg2,

@@ -7,7 +7,7 @@ import { SiStyledcomponents, SiPostgresql} from "react-icons/si"
 
 export default {
     title: "Linkr",
-    description: "Uma rede social para compartilhamento de links, você pode se registrar, publicar, comentar, curtir e compartilhar um link, seguir outros usuários da rede, a aplicação foi desenvolvida em um grupo de 5 pessoas.",
+    description: "link-description",
     pictures: [
         linkr1,
         linkr2,

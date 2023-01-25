@@ -2,11 +2,12 @@ import React, { useState } from "react"
 import { Tproject } from "../../interfaces"
 import { GrFormNext } from "react-icons/gr"
 import {IoIosArrowBack} from "react-icons/io"
+import { useTranslation } from "react-i18next"
 
 
 function Project({ project }: { project: Tproject }) {
     const [indexPicture, setIndexPicture] = useState(0)
-
+    const {t} = useTranslation()
     function nextIndexPicture() {
         if (indexPicture < project.pictures.length - 1) {
             setIndexPicture(indexPicture + 1)
@@ -34,7 +35,7 @@ function Project({ project }: { project: Tproject }) {
             </div>
             <div className="description" onClick={() => window.open(project.link)}>
                 <p className="project-title">{project.title}</p>
-                <p className="project-description">{project.description}</p>
+                <p className="project-description">{t(project.description)}</p>
                 <div className="project-icons">
                     {
                         project.technologies.map((Tech, index) => {

@@ -10,7 +10,7 @@ function Skills() {
     const { t } = useTranslation()
     return (
         <ContainerSkills>
-            <h1 className="title">{t("Habilidades")}</h1>
+            <h1 className="title">{t("habilidades")}</h1>
             <Fade delay={0} duration={750} cascade damping={1e-1}>
                 <ul>
                     {

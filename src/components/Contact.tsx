@@ -16,13 +16,13 @@ function Contact() {
         <ContainerContacts>
             <footer>
                 <Fade delay={750} cascade damping={1e-1} triggerOnce={true} >
-                    <h1>Vamos Fazer Algo grande<br /><Fade delay={2000} cascade damping={1e-1} triggerOnce={true}>
-                        <h1>Juntos!</h1>
+                    <h1>{t("contact-1")}<br /><Fade delay={2000} cascade damping={1e-1} triggerOnce={true}>
+                        <h1>{t("contact-2")}</h1>
                     </Fade>
                     </h1>
                 </Fade>
                 <Fade delay={3000} cascade damping={1e-1} triggerOnce={true} >
-                    <h2>Sinta-se a vontade para se conectar comigo em minhas redes sociais</h2>
+                    <h2>{t("contact-me")}</h2>
                     <div className="social-box">
                         <div className="social" onClick={() => window.open("https://github.com/marcojr73")}>
                             <BsGithub/>
