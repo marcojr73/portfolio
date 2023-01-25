@@ -9,7 +9,7 @@ import {GrDocker} from "react-icons/gr"
 
 export default {
     title: "Geo-quiz",
-    description: "A aplicação conta com 60 territórios, 164 capitais e 247 bandeiras de países registrados no banco de dados, separados por nível de dificuldade, um front-end web, uma api REST, testes e um aplicativo mobile.",
+    description: "geo-description",
     pictures: [
         geo1img1,
         geo1img2,

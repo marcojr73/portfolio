@@ -10,7 +10,7 @@ import {SiTypescript, SiStyledcomponents, SiPostgresql, SiPrisma, SiJest} from "
 
 export default {
     title: "Driven pass",
-    description: "A partir de uma senha “mestra” você Pode armazenar suas Senhas de cartões, wifi, web sites e criar notas, tudo de forma segura e criptografada.",
+    description: "pass-description",
     pictures: [
         pass1,
         pass2,

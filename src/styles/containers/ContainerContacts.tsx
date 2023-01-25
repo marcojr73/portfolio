@@ -30,20 +30,29 @@ const ContainerContacts = styled.section`
 
     .social-box{
         display: flex;
+        justify-content: space-between;
         width: 100%;
         font-size: 3rem;
         color: var(--primary-color);
         background-color: var(--secondary-color);
         padding: 5%;
         border-radius: 25px;
+        overflow: hidden;
     }
 
     .social{
-        margin-right: 12%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    
+    .social:not(:firlt-child){
+        margin-left: 12%;
+    }
+
+    p{
+        text-align: center;
     }
 
 `

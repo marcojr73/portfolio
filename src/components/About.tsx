@@ -21,7 +21,7 @@ function About() {
                 </Fade>
                 <Fade delay={4500} cascade damping={1e-1} triggerOnce={true} >
                     <p>{t("apresentacao")}</p>
-                    <a href={cv} download="cv-marco-jr">Baixar CV</a>
+                    <a href={cv} download="cv-marco-jr">{t("download")}</a>
                 </Fade>
             </section>
         </ContainerAbout>
