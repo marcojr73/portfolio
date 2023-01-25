@@ -28,5 +28,6 @@ export default {
         GrDocker,
         SiFlutter, 
         SiDart,
-    ]
+    ],
+    link: "https://github.com/marcojr73/projeto22-geoQuiz"
 }

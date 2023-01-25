@@ -18,5 +18,6 @@ export default {
         FaNodeJs,
         SiStyledcomponents,
         SiPostgresql,
-    ]
+    ],
+    link: "https://github.com/frreiro/Linkr"
 }

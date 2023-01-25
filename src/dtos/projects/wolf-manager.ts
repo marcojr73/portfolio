@@ -24,5 +24,6 @@ export default {
         SiStyledcomponents, 
         SiPrisma,
         SiPostgresql
-    ]
+    ],
+    link: "https://github.com/marcojr73/wolf-manager-pdv-front"
 }

@@ -33,6 +33,7 @@ type Tproject = {
     description: string;
     pictures: string[];
     technologies: IconType[];
+    link: string;
 }
 
 export type {

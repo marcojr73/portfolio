@@ -22,5 +22,6 @@ export default {
         SiPostgresql,
         SiJest,
         GrDocker
-    ]
+    ],
+    link: "https://github.com/marcojr73/ngcash-front-end"
 }

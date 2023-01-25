@@ -32,7 +32,7 @@ function Project({ project }: { project: Tproject }) {
                 <div className="controller" onClick={() => nextIndexPicture()} ></div>
                 <GrFormNext className="icon"/>
             </div>
-            <div className="description">
+            <div className="description" onClick={() => window.open(project.link)}>
                 <p className="project-title">{project.title}</p>
                 <p className="project-description">{project.description}</p>
                 <div className="project-icons">

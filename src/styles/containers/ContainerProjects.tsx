@@ -42,8 +42,8 @@ const ContainerProjects = styled.section`
     }
 
     .controller:hover{
-        opacity: 0.2;
-        transition: 0.5s;
+        opacity: 0.4;
+        transition: 1s;
         transition-timing-function: ease-in-out;
     }
 
@@ -73,6 +73,7 @@ const ContainerProjects = styled.section`
         justify-content: space-around;
         align-items: center;
         color: var(--text-color);
+        cursor: pointer;
     }
 
     .project-title{
