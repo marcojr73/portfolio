@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { IconType } from "react-icons";
 
 type Ttheme = {
     theme: {
@@ -27,7 +28,16 @@ type TProps = {
     children: ReactNode
 }
 
+type Tproject = {
+    title: string;
+    description: string;
+    pictures: string[];
+    technologies: IconType[];
+    link: string;
+}
+
 export type {
     Ttheme,
-    TProps
+    TProps,
+    Tproject
 }

@@ -12,14 +12,14 @@ function About() {
     return (
         <ContainerAbout>
             <section className="about">
-                <Fade delay={1000} cascade damping={1e-1} triggerOnce={true} >
+                <Fade delay={750} cascade damping={1e-1} triggerOnce={true} >
                     <h1>{t("bem-vindo")}<br />
                     <Fade delay={2500} cascade damping={1e-1} triggerOnce={true} >
                         <span>{t("bem-vindo-2")}</span>
                     </Fade>
                     </h1>
                 </Fade>
-                <Fade delay={4000} cascade damping={1e-1} triggerOnce={true} >
+                <Fade delay={4500} cascade damping={1e-1} triggerOnce={true} >
                     <p>{t("apresentacao")}</p>
                     <a href={cv} download="cv-marco-jr">Baixar CV</a>
                 </Fade>

@@ -1,10 +1,10 @@
 import React from "react"
-import { Fade, Slide } from "react-awesome-reveal"
+import { Fade } from "react-awesome-reveal"
 import { useTranslation } from "react-i18next"
 import ContainerSkills from "../../styles/containers/ContainerSkills"
 import Skill from "./skill"
 
-import SkillsDto from "./SkillsDto"
+import SkillsDto from "../../dtos/skills/index.ts"
 
 function Skills() {
     const { t } = useTranslation()
