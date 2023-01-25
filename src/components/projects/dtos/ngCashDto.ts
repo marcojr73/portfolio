@@ -8,7 +8,7 @@ import {GrDocker} from "react-icons/gr"
 
 export default {
     title: "Ng Cash",
-    description: "Aplicação inspirada na plataforma da NGCASH que tem o propósito de levar o controle e independência da vida financeira as novas gerações, Você pode fazer o login com um nome de usuário e senha e realizar transferências para outros usuários da aplicação",
+    description: "Aplicação inspirada na plataforma da NGCASH que tem o propósito de levar o controle e independência da vida financeira as novas gerações, Você pode fazer o login com um nome de usuário e senha, realizar transferências para outros usuários além de filtrar e visualizar seu saldo e histórico de uso.",
     pictures: [
         ngcash1,
         ngcash2,

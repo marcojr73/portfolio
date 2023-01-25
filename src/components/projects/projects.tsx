@@ -7,6 +7,7 @@ import geoQuizDto from "./dtos/geoQuizDto"
 import wolfManager from "./dtos/wolf-manager"
 import ngCashDto from "./dtos/ngCashDto"
 import tweterooDto from "./dtos/tweterooDto"
+import drivenPassDto from "./dtos/drivenPassDto"
 
 
 function Projects(){
@@ -18,6 +19,7 @@ function Projects(){
                 <Project project={geoQuizDto}/>
                 <Project project={wolfManager}/>
                 <Project project={ngCashDto}/>
+                <Project project={drivenPassDto}/>
                 <Project project={tweterooDto}/>
             </section>
         </ContainerProjects>
