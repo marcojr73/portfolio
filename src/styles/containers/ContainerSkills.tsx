@@ -31,7 +31,7 @@ const ContainerSkills = styled.section`
 
     li:hover{
         border-bottom: 10px solid var(--primary-color);
-        transition-duration: 1s;
+        transition-duration: 0.4s;
     }
     
     p{
@@ -48,6 +48,26 @@ const ContainerSkills = styled.section`
     .styled{
         margin-top: 5%;
         font-size: 5rem;
+    }
+
+    @media only screen and (max-width: 614px){
+        width: 100vw;
+        margin-left: 0;
+
+        ul{
+            width: 100%;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        p{
+            font-size: 1rem;
+        }
+
+        .icon{
+            margin-top: 5%;
+            font-size: 2rem;
+        }
     }
 `
 

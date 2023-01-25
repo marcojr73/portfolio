@@ -111,6 +111,11 @@ const ContainerAside = styled.aside`
     .selected{
         background-color: var(--primary-color);
     }
+
+    @media only screen and (max-width: 614px){
+        width: 100vw;
+        position: relative;
+    }
 `
 
 export default ContainerAside

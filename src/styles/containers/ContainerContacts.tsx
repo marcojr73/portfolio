@@ -45,6 +45,7 @@ const ContainerContacts = styled.section`
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
     }
     
     .social:not(:firlt-child){
@@ -53,6 +54,18 @@ const ContainerContacts = styled.section`
 
     p{
         text-align: center;
+    }
+
+    @media only screen and (max-width: 614px){
+        width: 100vw;
+        margin-left: 0;
+        align-items: flex-start;
+
+        .social-box{
+            width: 100vw;
+            margin: 0;
+            font-size: 1.5rem;
+        }
     }
 
 `

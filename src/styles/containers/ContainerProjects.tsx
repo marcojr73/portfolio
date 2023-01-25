@@ -100,6 +100,38 @@ const ContainerProjects = styled.section`
         margin-right: 2%;
     }
 
+    @media only screen and (max-width: 614px){
+        width: 100vw;
+        margin-left: 0;
+
+        .projects-square{
+            width: 100%;
+        }
+
+        .project-title{
+            font-size: 1.5rem;
+        }
+
+        .project-description{
+            font-size: 0.8rem;
+            text-align: center;
+            width: 80%;
+        }
+
+        .project-icon{
+            font-size: 1rem;
+        }
+
+        .project{
+            flex-direction: column;
+        }
+
+        .carousel, .description{
+            width: 100%;
+        }
+
+    }
+
 
 
 

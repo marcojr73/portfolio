@@ -18,7 +18,7 @@ const ContainerAbout = styled.section`
     }
 
     h1{
-        font-size: 3rem;
+        font-size: 4rem;
         font-weight: bold;
     }
     
@@ -39,6 +39,20 @@ const ContainerAbout = styled.section`
         margin-top: 5%;
         font-size: 1.5rem;
         margin-left: 80%;
+    }
+
+    @media only screen and (max-width: 614px){
+        width: 100vw;
+        margin-left: 0;
+
+        .about{
+            align-items: center;
+            width: 100%;
+        }
+
+        a{
+            width: 100%;
+        }
     }
 
 `
