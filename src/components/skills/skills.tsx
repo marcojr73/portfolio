@@ -11,7 +11,7 @@ function Skills() {
     return (
         <ContainerSkills>
             <h1 className="title">{t("Habilidades")}</h1>
-            <Fade delay={0} duration={500} cascade damping={1e-1}>
+            <Fade delay={0} duration={750} cascade damping={1e-1}>
                 <ul>
                     {
                         SkillsDto.map(skill => {
