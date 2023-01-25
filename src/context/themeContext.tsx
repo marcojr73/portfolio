@@ -2,9 +2,10 @@
 import React, { createContext, useState } from "react"
 import { TProps, Ttheme } from "../interfaces"
 import darkTheme from "../styles/themes/darkTheme"
+import lightTheme from "../styles/themes/lightTheme"
 
 const initialValue = {
-    theme: darkTheme,
+    theme: lightTheme,
     setTheme: () => { }
 }
 

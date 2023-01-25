@@ -27,10 +27,10 @@ function Aside(){
                 <p>{t("dev-description")}</p>
             </header>
             <ul>
-                <li className="list-item" key={"about"} >{t("sobre")}</li>
-                <li className="list-item" key={"skills"} >{t("habilidades")}</li>
-                <li className="list-item" key={"projects"} >{t("projetos")}</li>
-                <li className="list-item" key={"contact"} >{t("contato")}</li>
+                <li className="list-item" key={"about"} onClick={() => document.getElementById("about")?.scrollIntoView({behavior: "smooth"})}>{t("sobre")}</li>
+                <li className="list-item" key={"skills"} onClick={() => document.getElementById("skills")?.scrollIntoView({behavior: "smooth"})} >{t("habilidades")}</li>
+                <li className="list-item" key={"projects"} onClick={() => document.getElementById("projects")?.scrollIntoView({behavior: "smooth"})} >{t("projetos")}</li>
+                <li className="list-item" key={"contact"} onClick={() => document.getElementById("contacts")?.scrollIntoView({behavior: "smooth"})}>{t("contato")}</li>
                 <li key={"social"} >
                     <BsLinkedin className="icon" onClick={() => window.open("https://www.linkedin.com/in/marcojr73")}/>
                     <BsGithub className="icon" onClick={() => window.open("https://github.com/marcojr73")}/>

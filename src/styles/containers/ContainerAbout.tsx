@@ -10,10 +10,11 @@ const ContainerAbout = styled.section`
 
     .about{
         width: 60%;
-        height: 40%;
+        height: 100%;
         display: flex;
         flex-direction: column;
-        color: var(--text-color)
+        justify-content: center;
+        color: var(--text-color);
     }
 
     h1{

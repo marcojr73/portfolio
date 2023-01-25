@@ -11,7 +11,7 @@ function About() {
 
     return (
         <ContainerAbout>
-            <section className="about">
+            <section id="about" className="about">
                 <Fade delay={750} cascade damping={1e-1} triggerOnce={true} >
                     <h1>{t("bem-vindo")}<br />
                     <Fade delay={2500} cascade damping={1e-1} triggerOnce={true} >
