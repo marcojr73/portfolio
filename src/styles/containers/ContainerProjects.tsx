@@ -2,7 +2,6 @@ import styled from "styled-components"
 
 const ContainerProjects = styled.section`
     width: 82.5vw;
-    height: 100vh;
     margin-left: 17vw;
 
     .projects-square{
@@ -10,74 +9,100 @@ const ContainerProjects = styled.section`
         height: 80%;
         margin: auto;
         margin-top: 5%;
+        border-radius: 10px;
     }
-
-    .slider{
-        margin: 0 auto;
-        width: 800px;
-        height: 400px;
-        overflow: hidden;
-    }
-
-    .slides{
+    
+    .project{
+        background-color: var(--secondary-color);
+        width: 100%;
+        height: 35vh;
         display: flex;
-        width: 400%;
-        height: 400px;
+        margin-bottom: 3%;
     }
 
-    .slides input{
-        display: none;
-    }
-
-    .slide {
-        width: 25%;
+    .carousel{
+        width: 50%;
+        height: 100%;
         position: relative;
     }
 
-    .slide img{
-        width: 800px;
+    .icon{
+        position: absolute;
+        top: 50%;
+        font-size: 2rem;
+        pointer-events: none;
     }
 
-    .manual-navigation{
+    .controller{
         position: absolute;
-        width: 800px;
-        margin-top: -40px;
+        width: 15%;
+        height: 100%;
+        background-color: white;
+        opacity: 0;
+    }
+
+    .controller:hover{
+        opacity: 0.2;
+        transition: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .controller:not(:first-child){
+        right: 0;
+        top: 0;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .icon:not(:first-child){
+        right: 3%;
+    }
+
+    .icon:not(:last-child){
+        left: 3%;
+    }
+
+    .description{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        color: var(--text-color);
+    }
+
+    .project-title{
+        font-size: 2.5rem;
+    }
+
+    .project-description{
+        font-size: 1.5rem;
+        text-align: center;
+        width: 80%;
+    }
+
+    .project-icons{
+        width: 100%;
         display: flex;
         justify-content: center;
     }
 
-    .manual-btn{
-        border: 2px solid black;
-        padding: 5px;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: 1s;
+    .project-icon{
+        font-size: 2rem;
     }
 
-    .manual-btn:not(:last-child){
-        margin-right: 40px;
-    }
-
-    .manual-btn:hover{
-        background-color: #000;
+    .project-icon:not(:last-child){
+        margin-right: 2%;
     }
 
 
-    #radio1:checked ~ .first{
-        margin-left: 0;
-    }
 
-    #radio2:checked ~ .first{
-        margin-left: -25%;
-    }
 
-    #radio3:checked ~ .first{
-        margin-left: -50%;
-    }
-
-    #radio4:checked ~ .first{
-        margin-left: -75%;
-    }
+    
 `
 
 export default ContainerProjects
