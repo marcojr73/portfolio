@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
-import React, { createContext, useState } from "react"
+import React, { createContext } from "react"
+import usePersistedState from "../hooks/usePersistedState"
 import { TProps, Ttheme } from "../interfaces"
-import darkTheme from "../styles/themes/darkTheme"
 import lightTheme from "../styles/themes/lightTheme"
 
 const initialValue = {
@@ -12,7 +12,7 @@ const initialValue = {
 export const themeContext = createContext<Ttheme>(initialValue)
 
 export const ThemeContextProvider = ({ children }: TProps) => {
-    const [theme, setTheme] = useState(initialValue.theme)
+    const [theme, setTheme] = usePersistedState("theme", lightTheme)
     return (
         <themeContext.Provider value={{ theme, setTheme }}>
             {children}

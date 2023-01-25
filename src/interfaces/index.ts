@@ -24,6 +24,11 @@ type Ttheme = {
     },) => void
 }
 
+type Tlanguage ={
+    language: string;
+    setLanguage: (newState: string) => void
+}
+
 type TProps = {
     children: ReactNode
 }
@@ -39,5 +44,6 @@ type Tproject = {
 export type {
     Ttheme,
     TProps,
-    Tproject
+    Tproject,
+    Tlanguage
 }
