@@ -18,7 +18,7 @@ function Projects() {
         <ContainerProjects>
             <h1 id="projects" className="title">{t("projetos")}</h1>
             <section className="projects-square" >
-                <Fade duration={2000}>
+                <Fade delay={500} duration={2000}>
                     <Project project={geoQuizDto} />
                     <Project project={wolfManager} />
                     <Project project={ngCashDto} />
