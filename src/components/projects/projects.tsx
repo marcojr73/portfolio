@@ -9,7 +9,7 @@ import ngCashDto from "../../dtos/projects/ngCashDto"
 import tweterooDto from "../../dtos/projects/tweterooDto"
 import drivenPassDto from "../../dtos/projects/drivenPassDto"
 import linkrDto from "../../dtos/projects/linkrDto"
-import { Fade, Roll, Zoom } from "react-awesome-reveal"
+import { Fade } from "react-awesome-reveal"
 
 
 function Projects() {
