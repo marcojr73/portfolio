@@ -52,6 +52,7 @@ const ContainerSkills = styled.section`
 
     @media only screen and (max-width: 614px){
         width: 100vw;
+        height: 130vh;
         margin-left: 0;
 
         ul{

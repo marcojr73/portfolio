@@ -45,13 +45,24 @@ const ContainerAbout = styled.section`
         width: 100vw;
         margin-left: 0;
 
+        h1{
+            font-size: 2.5rem;
+        }
+
+        p{
+            font-size: 1rem;
+        }
+
         .about{
             align-items: center;
-            width: 100%;
+            width: 80%;
         }
 
         a{
             width: 100%;
+            padding: 0 20px;
+            margin-left: 0;
+            margin-top: 20%;
         }
     }
 

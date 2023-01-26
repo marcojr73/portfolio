@@ -124,6 +124,8 @@ const ContainerProjects = styled.section`
 
         .project{
             flex-direction: column;
+            height: 50vh;
+            margin-bottom: 30px;
         }
 
         .carousel, .description{

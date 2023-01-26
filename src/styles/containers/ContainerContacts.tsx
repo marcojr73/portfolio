@@ -59,12 +59,21 @@ const ContainerContacts = styled.section`
     @media only screen and (max-width: 614px){
         width: 100vw;
         margin-left: 0;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
+
+        h1{
+            font-size: 2rem;
+        }
 
         .social-box{
             width: 100vw;
             margin: 0;
             font-size: 1.5rem;
+            margin-top: 20%;
+            border-radius: 0;
+            position: absolute;
+            left: 0;
         }
     }
 

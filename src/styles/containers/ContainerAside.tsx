@@ -116,6 +116,14 @@ const ContainerAside = styled.aside`
         width: 100vw;
         position: relative;
     }
+
+    img{
+        width: 50%;
+    }
+
+    .acronyms{
+        font-size: 1.8rem;
+    }
 `
 
 export default ContainerAside
