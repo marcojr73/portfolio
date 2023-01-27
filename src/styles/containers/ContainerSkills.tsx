@@ -30,7 +30,7 @@ const ContainerSkills = styled.section`
     }
 
     li:hover{
-        border-bottom: 10px solid var(--primary-color);
+        border-bottom: 12px solid var(--primary-color);
         transition-duration: 0.4s;
     }
     
