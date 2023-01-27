@@ -27,42 +27,32 @@ const ContainerProjects = styled.section`
     }
 
     .icon{
-        position: absolute;
-        top: 50%;
         font-size: 2rem;
         pointer-events: none;
     }
 
     .controller{
         position: absolute;
-        width: 15%;
-        height: 100%;
-        background-color: white;
-        opacity: 0;
-    }
-
-    .controller:hover{
-        opacity: 0.4;
-        transition: 1s;
-        transition-timing-function: ease-in-out;
+        width: 2.5vw;
+        height: 2.5vw;
+        background-color: gray;
+        border-radius: 50%;
+        top: 40%;
+        margin: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        opacity: 0.9;
     }
 
     .controller:not(:first-child){
         right: 0;
-        top: 0;
     }
 
     img{
         width: 100%;
         height: 100%;
-    }
-
-    .icon:not(:first-child){
-        right: 5%;
-    }
-
-    .icon:not(:last-child){
-        left: 5%;
     }
 
     .description{
@@ -73,7 +63,15 @@ const ContainerProjects = styled.section`
         justify-content: space-around;
         align-items: center;
         color: var(--text-color);
+        position: relative;
         cursor: pointer;
+    }
+
+    .link{
+        position: absolute;
+        top: 8%;
+        right: 5%;
+        font-size: 2rem;
     }
 
     .project-title{

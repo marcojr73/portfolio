@@ -3,6 +3,7 @@ import { Tproject } from "../../interfaces"
 import { GrFormNext } from "react-icons/gr"
 import {IoIosArrowBack} from "react-icons/io"
 import { useTranslation } from "react-i18next"
+import {FiLink} from "react-icons/fi"
 
 
 function Project({ project }: { project: Tproject }) {
@@ -27,14 +28,17 @@ function Project({ project }: { project: Tproject }) {
     return (
         <div className="project">
             <div className="carousel">
-                <div className="controller" onClick={() => previewIndexPicture()}></div>
-                <IoIosArrowBack className="icon"/>
+                <div className="controller" onClick={() => previewIndexPicture()}>
+                    <IoIosArrowBack className="icon"/>
+                </div>
                 <img src={project.pictures[indexPicture]} alt="screenshot" />
-                <div className="controller" onClick={() => nextIndexPicture()} ></div>
-                <GrFormNext className="icon"/>
+                <div className="controller" onClick={() => nextIndexPicture()} >
+                    <GrFormNext className="icon"/>
+                </div>
             </div>
             <div className="description" onClick={() => window.open(project.link)}>
                 <p className="project-title">{project.title}</p>
+                <FiLink className="link"/>
                 <p className="project-description">{t(project.description)}</p>
                 <div className="project-icons">
                     {
