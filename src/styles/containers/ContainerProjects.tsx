@@ -11,19 +11,30 @@ const ContainerProjects = styled.section`
         margin-top: 5%;
         border-radius: 10px;
     }
-    
+
     .project{
         background-color: var(--secondary-color);
         width: 100%;
         height: 35vh;
         display: flex;
         margin-bottom: 3%;
+        transition-duration: 0.4s;
     }
 
     .carousel{
         width: 50%;
         height: 100%;
         position: relative;
+        transition-duration: 0.4s;
+    }
+
+    .carousel { 
+        transition: all 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+        z-index: 1;
+    }
+
+    .carousel:hover{ 
+        transform: scale(1.2); 
     }
 
     .icon{
