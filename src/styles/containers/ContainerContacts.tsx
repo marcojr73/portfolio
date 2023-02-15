@@ -88,6 +88,7 @@ const ContainerContacts = styled.section`
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-gap: 5% 2%;
+        text-align: center;
     }
 
     p{
@@ -111,7 +112,6 @@ const ContainerContacts = styled.section`
 
     .media:hover{
         color: var(--primary-color);
-        transition-duration: 0.6s;
     }
 
     @media only screen and (max-width: 614px){

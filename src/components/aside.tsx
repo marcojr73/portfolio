@@ -23,8 +23,8 @@ function Aside(){
         <ContainerAside>
             <header>
                 <img src={me} alt="person"/>
-                <p className="acronyms">Marco jr</p>
-                <p>{t("dev-description")}</p>
+                <h1>Marco júnior</h1>
+                <p className="fs">{t("dev-description")}</p>
             </header>
             <ul>
                 <li className="list-item" key={"about"} onClick={() => document.getElementById("about")?.scrollIntoView({behavior: "smooth"})}>{t("sobre")}</li>

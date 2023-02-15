@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Fade } from "react-awesome-reveal"
 import { useTranslation } from "react-i18next"
 import ContainerContacts from "../styles/containers/ContainerContacts"
@@ -9,19 +9,22 @@ import { MdOutlineMailOutline } from "react-icons/md"
 import emailjs from "@emailjs/browser"
 import { SiLichess, SiRiotgames } from "react-icons/si"
 import { toast } from "react-toastify"
+import Loader from "../utils/loader"
 
 function Contact() {
+    const { t } = useTranslation()
+
     const sendEmail = (e: any) => {
         e.preventDefault()
-        emailjs.sendForm(import.meta.env.VITE_APP_SERVICE_ID, import.meta.env.VITE_APP_TEMPLATE_ID, e.target, import.meta.env.VITE_APP_PUBLIC_KEY)
-            .then(() => {
-                toast("Mensagem enviada")
-            }, (error) => {
-                toast.error(error.text)
-            })
+        try {
+            emailjs.sendForm(import.meta.env.VITE_APP_SERVICE_ID, import.meta.env.VITE_APP_TEMPLATE_ID, e.target, import.meta.env.VITE_APP_PUBLIC_KEY)
+            toast("Mensagem enviada")
+        } catch (error) {
+            toast.error("Ocorreu um erro ao enviar a mensagem")
+        }
+        e.target.reset()
     }
 
-    const { t } = useTranslation()
 
     return (
         <ContainerContacts>
@@ -43,28 +46,28 @@ function Contact() {
                         <h2>{t("contact-me")}</h2>
                         <div className="social">
                             <div className="media" onClick={() => window.open("https://www.linkedin.com/in/marcojr73/")}>
-                                <BsLinkedin className="icon"  />
+                                <BsLinkedin className="icon" />
                                 <p>Linkedin</p>
                             </div>
                             <div className="media" onClick={() => window.open("https://github.com/marcojr73")}>
-                                <BsGithub className="icon"  />
+                                <BsGithub className="icon" />
                                 <p>GitHub</p>
                             </div>
                             <div className="media" onClick={() => window.open("mailto:marco.junior@engenharia.ufjf.br")}>
-                                <MdOutlineMailOutline className="icon"  />
+                                <MdOutlineMailOutline className="icon" />
                                 <p>Email</p>
                             </div>
                             <div className="media" onClick={() => window.open("https://wa.me/5532984640142?")}>
-                                <BsWhatsapp className="icon"  />
+                                <BsWhatsapp className="icon" />
                                 <p>Whatsapp</p>
                             </div>
                             <div className="media" onClick={() => window.open("https://lichess.org/@/oxidaks")}>
-                                <SiLichess className="icon"  />
+                                <SiLichess className="icon" />
                                 <p>Lichess</p>
                             </div>
                             <div className="media" onClick={() => window.open("https://www.op.gg/summoners/br/FiatUno2013")}>
-                                <SiRiotgames className="icon"  />
-                                <p>LOL</p>
+                                <SiRiotgames className="icon" />
+                                <p>League of Legends</p>
                             </div>
                         </div>
                     </section>

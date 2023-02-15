@@ -30,7 +30,7 @@ const ContainerAside = styled.aside`
         align-items: center;
         justify-content: space-around;
         color: white;
-        font-family: "Jost";
+        font-family: "Amatic SC";
     }
     
     img{
@@ -39,12 +39,14 @@ const ContainerAside = styled.aside`
     }
 
     p{
-        font-size: 1.2rem
+        font-size: 2rem;
+        text-align: center;
     }
+
     
-    .acronyms{
-        font-size: 3rem;
+    h1{
         font-weight: bold;
+        font-size: 3rem;
     }
 
     ul{
