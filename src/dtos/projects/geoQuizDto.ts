@@ -4,7 +4,7 @@ import geo1img3 from "../../assets/images/geo-quiz/geo-quiz-screen-3.png"
 import geo1img4 from "../../assets/images/geo-quiz/geo-quiz-screen-4.png"
 
 import {FaReact, FaNodeJs} from "react-icons/fa"
-import {SiTypescript, SiStyledcomponents, SiPostgresql, SiPrisma, SiJest, SiCypress, SiFlutter, SiDart} from "react-icons/si"
+import {SiTypescript, SiStyledcomponents, SiPostgresql, SiPrisma, SiJest, SiCypress, SiFlutter, SiDart, SiSwagger} from "react-icons/si"
 import {GrDocker} from "react-icons/gr"
 
 export default {
@@ -28,6 +28,7 @@ export default {
         GrDocker,
         SiFlutter, 
         SiDart,
+        SiSwagger
     ],
     link: "https://github.com/marcojr73/projeto22-geoQuiz"
 }

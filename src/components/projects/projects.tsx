@@ -10,6 +10,7 @@ import tweterooDto from "../../dtos/projects/tweterooDto"
 import drivenPassDto from "../../dtos/projects/drivenPassDto"
 import linkrDto from "../../dtos/projects/linkrDto"
 import { Fade } from "react-awesome-reveal"
+import chegaLogoDto from "../../dtos/projects/chegaLogoDto"
 
 
 function Projects() {
@@ -19,6 +20,7 @@ function Projects() {
             <h1 id="projects" className="title">{t("projetos")}</h1>
             <section className="projects-square" >
                 <Fade delay={500} duration={2000}>
+                    <Project project={chegaLogoDto} />
                     <Project project={geoQuizDto} />
                     <Project project={wolfManager} />
                     <Project project={ngCashDto} />
