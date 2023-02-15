@@ -112,6 +112,7 @@ const ContainerContacts = styled.section`
 
     .media:hover{
         color: var(--primary-color);
+        transition-duration: 0.6s;
     }
 
     @media only screen and (max-width: 614px){
