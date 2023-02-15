@@ -12,7 +12,11 @@ export default createGlobalStyle`
     }
 
     body::-webkit-scrollbar {
-        width: 6px;
+        width: 8px;
+    }
+	
+    body { 
+        overflow-x: hidden; 
     }
 
     body::-webkit-scrollbar-track {
@@ -31,9 +35,33 @@ export default createGlobalStyle`
         text-decoration: none;
     }
 
+    h1, h2{
+        cursor: default;
+    }
+
+    input, textarea{
+        border: none;
+        border-radius: 3px;
+        font-size: 0.8vw;
+        padding: 0px 0px 0px 4%;
+        color: var(--text-color);
+        background-color: var(--background-color);
+        cursor: auto;
+    }
+
     button{
+        cursor: pointer;
         border: none;
     }
+
+    input:focus, textarea:focus{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        box-shadow: 0 0 0 0;
+        outline: 0;
+    }
+
 
     a{
         text-decoration: none;

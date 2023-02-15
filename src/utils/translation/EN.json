@@ -18,6 +18,10 @@
         "chega logo description": "Full stack application, based on authentication. the user can manage a logo of the shipping company, uploading spreadsheets with data on delivery locations, register, delete and view truck information.",
         "contact-1": "Let's Make Something great,",
         "contact-2": "Together!",
-        "contact-me": "Feel free to connect with me on my social media."
+        "contact-me": "Feel free to connect with me",
+        "send-me message": "Send me a message",
+        "enviar": "Send",
+        "email": "Inform your email",
+        "message": "Message"
     }
 }

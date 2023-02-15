@@ -5,6 +5,7 @@ import Content from "./pages/Content"
 import GlobalStyle from "./styles/GlobalStyle"
 import "./styles/reset.css"
 import { themeContext } from "./context/themeContext"
+import Toastify from "./utils/toatify"
 
 function App() {
   const {theme} = useContext(themeContext)
@@ -12,6 +13,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
         <GlobalStyle />
+        <Toastify/>
         <Aside/>
         <Content/>
     </ThemeProvider>

@@ -4,56 +4,114 @@ const ContainerContacts = styled.section`
     width: 82.5vw;
     height: 100vh;
     margin-left: 17vw;
+    margin-top: 25vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     footer{
-        width: 60%;
-        height: 60%;
-        margin-top: 12%;
+        width: 100%;
+        height: 100%;
         display: flex;
+        align-items: center;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         color: var(--text-color);
     }
     
-    h1{
+    #contacts{
         font-size: 4rem;
         font-weight: bold;
         color: var(--text-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 40vh;
     }
-
+    
     h2{
         font-size: 1.8rem;
+        margin: 5vh auto;
     }
 
-    .social-box{
-        display: flex;
-        justify-content: space-between;
+    .contact-me{
         width: 100%;
-        font-size: 3rem;
-        color: var(--primary-color);
+        height: 60vh;
         background-color: var(--secondary-color);
-        padding: 5%;
-        border-radius: 25px;
-        overflow: hidden;
+        display: flex;
     }
 
-    .social{
+    form{
+        width: 40%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        cursor: pointer;
     }
-    
-    .social:not(:firlt-child){
-        margin-left: 12%;
+
+    input{
+        width: 70%;
+        height: 10%;
+        margin: 0 0 5%;
+    }
+
+    textarea{
+        padding-top: 3%;
+        width: 70%;
+        height: 40%;
+        resize: none;
+    }
+
+    button{
+        margin: 5%;
+        width: 50%;
+        height: 10%;
+        background-color: var(--primary-color);
+        font-size: 1.5rem;
+        border-radius: 5px;
+        font-size: 0.8vw;
+        color: var(--text-color);
+    }
+
+    .social-box{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social{
+        margin: 0 auto;
+        display: grid;
+        width: 70%;
+        height: 70%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 5% 2%;
     }
 
     p{
-        text-align: center;
+        margin: 6% 0 0 0;
+    }
+    
+    .icon, p{
+        cursor: pointer;
+    }
+    
+    .media{
+        background-color: var(--background-color);
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .media:hover{
+        color: var(--primary-color);
+        transition-duration: 0.6s;
     }
 
     @media only screen and (max-width: 614px){
@@ -61,19 +119,38 @@ const ContainerContacts = styled.section`
         margin-left: 0;
         align-items: center;
         justify-content: center;
+        height: 150vh;
 
-        h1{
+        #contacts{
+            margin: auto;
             font-size: 2rem;
         }
 
-        .social-box{
-            width: 100vw;
+        h2{
+            font-size: 1rem;
+        }
+
+        input, button, textarea{
+            font-size: 1rem;
+        }
+
+        .contact-me{
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        form, .social-box{
+            width: 100%;
+            height: 100%;
+        }
+
+        .social{
+            width: 100%;
             margin: 0;
-            font-size: 1.5rem;
-            margin-top: 20%;
-            border-radius: 0;
-            position: absolute;
-            left: 0;
+        }
+
+        .media{
+            font-size: 1rem;
         }
     }
 

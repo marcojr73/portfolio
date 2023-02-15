@@ -1,7 +1,7 @@
 import React, { useContext } from "react"
 import ContainerAside from "../styles/containers/ContainerAside"
 
-import {BsGithub, BsLinkedin, BsMoonStarsFill, BsSunFill} from "react-icons/bs"
+import {BsGithub, BsLinkedin, BsMoonStarsFill, BsSunFill, BsWhatsapp} from "react-icons/bs"
 import {SiLichess} from "react-icons/si"
 import Switch from "react-switch"
 import { useTranslation } from "react-i18next"
@@ -34,7 +34,7 @@ function Aside(){
                 <li key={"social"} >
                     <BsLinkedin className="icon" onClick={() => window.open("https://www.linkedin.com/in/marcojr73")}/>
                     <BsGithub className="icon" onClick={() => window.open("https://github.com/marcojr73")}/>
-                    <SiLichess className="icon" onClick={() => window.open("https://lichess.org/@/oxidaks")}/>
+                    <BsWhatsapp className="icon" onClick={() => window.open("https://wa.me/5532984640142?")}/>
                 </li>
             </ul>
             <section className="presets">

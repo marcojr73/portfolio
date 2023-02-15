@@ -18,6 +18,10 @@
         "chega logo description": "Aplicação full stack, a partir de uma autenticação. o usuário pode administrar a transportadora Chega logo, fazendo uploads de planilhas com dados de locais de entregas, cadastrar, deletar e visualizar informações do caminhões.",
         "contact-1": "Vamos Fazer Algo grande,",
         "contact-2": "juntos!",
-        "contact-me": "Sinta-se a vontade para se conectar comigo em minhas redes sociais"
+        "contact-me": "Sinta-se a vontade para se conectar comigo",
+        "send-me message": "Me envie uma mensagem",
+        "enviar": "Enviar",
+        "email": "Informe seu email",
+        "message": "Mensagem"
     }
 }
