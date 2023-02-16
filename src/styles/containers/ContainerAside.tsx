@@ -10,15 +10,79 @@ const ContainerAside = styled.aside`
     justify-content: space-between;
     border-right: 1px solid var(--primary-color);
 
-    header, ul, li, .presets, .language, .switch {
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .static{
+        font-size: 2rem;
+    }
+
+    .wrapper .dynamic {
+        margin-left: 3%;
+        height: 25%;
+        overflow: hidden;
+    }
+
+    .wrapper .dynamic li{
+        font-size: 2rem; 
+        position: relative;
+        top: 0;
+        animation: slider 8s steps(4) infinite;
+    }
+    
+    @keyframes slider {
+        100%{
+            top: -8rem;
+        }        
+    }
+
+    .wrapper .dynamic li::after {
+        content: "";
+        position: absolute;
+        background-color: var(--primary-color);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        border-left: 2px solid white;
+        animation: typing-bar 2s steps(10) infinite;
+    }
+    
+    @keyframes typing-bar {
+        40%, 60%{
+            left: 99.5%;
+        }   
+        100%{
+            left: 0;
+        }     
+    }
+
+    .wrapper .dynamic li:nth-child(4)::after{
+        animation-name: typing-bar-shrink;
+    }
+    
+    @keyframes typing-bar-shrink {
+        40%, 60%{
+            left: 70%;
+        }   
+        100%{
+            left: 0;
+        }  
+    }
+
+    header, .list, .list-item, .presets, .language, .switch {
         display: flex;
     }
 
-    header, ul, .presets {
+    header, .list, .presets {
         flex-direction: column;
     }
 
-    ul, li, .presets {
+    .list, .list-item, .presets {
         justify-content: center;
     }
     
@@ -36,6 +100,7 @@ const ContainerAside = styled.aside`
     img{
         border-radius: 50%;
         width: 70%;
+        margin-top: 10%;
     }
 
     p{
@@ -49,7 +114,7 @@ const ContainerAside = styled.aside`
         font-size: 3rem;
     }
 
-    ul{
+    .list{
         padding-top: 15%;
         width: 100%;
         height: 45vh;
@@ -57,14 +122,14 @@ const ContainerAside = styled.aside`
         color: var(--text-color);
     }
 
-    li{
+    .list-item{
         height: 15%;
         align-items: center;
         border-top: 1px solid var(--primary-color);
         cursor: pointer;
     }
     
-    li:last-child{
+    .list-item:last-child{
         padding-top: 13%;
     }
 
@@ -73,6 +138,10 @@ const ContainerAside = styled.aside`
                     inset 0px -11px 8px -10px var(--primary-color); ;
         transition-duration: 0.4s;
         transition-timing-function: ease-in-out;
+    }
+
+    .social:hover{
+        box-shadow: none;
     }
     
     .icon{

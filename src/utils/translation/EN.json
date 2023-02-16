@@ -22,6 +22,7 @@
         "send-me message": "Send me a message",
         "enviar": "Send",
         "email": "Inform your email",
-        "message": "Message"
+        "message": "Message",
+        "desenvolvedor": "Developer"
     }
 }
