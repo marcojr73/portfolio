@@ -9,7 +9,7 @@ import ngCashDto from "../../dtos/projects/ngCashDto"
 import tweterooDto from "../../dtos/projects/tweterooDto"
 import drivenPassDto from "../../dtos/projects/drivenPassDto"
 import linkrDto from "../../dtos/projects/linkrDto"
-import { Fade } from "react-awesome-reveal"
+import { Fade, Slide } from "react-awesome-reveal"
 import chegaLogoDto from "../../dtos/projects/chegaLogoDto"
 
 
@@ -19,15 +19,27 @@ function Projects() {
         <ContainerProjects>
             <h1 id="projects" className="title">{t("projetos")}</h1>
             <section className="projects-square" >
-                <Fade delay={500} duration={2000}>
+                <Slide duration={2000} direction="right" triggerOnce>
                     <Project project={chegaLogoDto} />
+                </Slide>
+                <Slide duration={2000} direction="right" triggerOnce>
                     <Project project={geoQuizDto} />
+                </Slide>
+                <Slide duration={2000} direction="right" triggerOnce>
                     <Project project={wolfManager} />
+                </Slide>
+                <Slide duration={2000} direction="right" triggerOnce>
                     <Project project={ngCashDto} />
+                </Slide>
+                <Slide duration={2000} direction="right" triggerOnce>
                     <Project project={drivenPassDto} />
+                </Slide>
+                <Slide duration={2000} direction="right" triggerOnce>
                     <Project project={linkrDto} />
+                </Slide>
+                <Slide duration={2000} direction="right" triggerOnce>
                     <Project project={tweterooDto} />
-                </Fade>
+                </Slide>
             </section>
         </ContainerProjects>
     )

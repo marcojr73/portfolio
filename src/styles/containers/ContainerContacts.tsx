@@ -4,10 +4,13 @@ const ContainerContacts = styled.section`
     width: 82.5vw;
     height: 100vh;
     margin-left: 17vw;
-    margin-top: 25vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .fade{
+        width: 100%;
+    }
 
     footer{
         width: 100%;
@@ -113,6 +116,10 @@ const ContainerContacts = styled.section`
     .media:hover{
         color: var(--primary-color);
         transition-duration: 0.6s;
+    }
+
+    .fade{
+        width: 100%;
     }
 
     @media only screen and (max-width: 614px){
