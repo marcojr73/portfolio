@@ -95,6 +95,7 @@ const ContainerAside = styled.aside`
         justify-content: space-around;
         color: white;
         font-family: "Amatic SC";
+        cursor: default;
     }
     
     img{
@@ -149,6 +150,12 @@ const ContainerAside = styled.aside`
         font-size: 1.5rem;
         color: var(--primary-color);
         cursor: pointer
+    }
+
+    h1:hover, .wrapper:hover{
+        text-shadow: 0 0 8px #FFF;
+        transition-duration: 0.4s;
+        transition-timing-function: ease-in-out;
     }
 
     .presets{

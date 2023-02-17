@@ -115,7 +115,9 @@ const ContainerContacts = styled.section`
 
     .media:hover{
         color: var(--primary-color);
-        transition-duration: 0.6s;
+        text-shadow: 0 0 4px var(--primary-color), 0 0 8px var(--primary-color);
+        transition-duration: 0.8s;
+        transition-timing-function: ease-in-out;
     }
 
     .fade{
