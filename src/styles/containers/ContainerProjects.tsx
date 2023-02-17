@@ -128,7 +128,7 @@ const ContainerProjects = styled.section`
         }
 
         .project-icon{
-            font-size: 1rem;
+            font-size: 5rem;
         }
 
         .project{
@@ -141,12 +141,19 @@ const ContainerProjects = styled.section`
             width: 100%;
         }
 
+        .controller{
+            width: 10vw;
+            height: 10vw;
+        }
+
+        .project-icon{
+            font-size: 2rem;
+        }
+
+        .carousel:hover{ 
+            transform: scale(1); 
+        }
     }
-
-
-
-
-    
 `
 
 export default ContainerProjects

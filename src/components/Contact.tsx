@@ -52,13 +52,13 @@ function Contact() {
                                 <BsGithub className="icon" />
                                 <p>GitHub</p>
                             </div>
-                            <div className="media" onClick={() => window.open("mailto:marco.junior@engenharia.ufjf.br")}>
-                                <MdOutlineMailOutline className="icon" />
-                                <p>Email</p>
-                            </div>
                             <div className="media" onClick={() => window.open("https://wa.me/5532984640142?")}>
                                 <BsWhatsapp className="icon" />
                                 <p>Whatsapp</p>
+                            </div>
+                            <div className="media" onClick={() => window.open("mailto:marco.junior@engenharia.ufjf.br")}>
+                                <MdOutlineMailOutline className="icon" />
+                                <p>Email</p>
                             </div>
                             <div className="media" onClick={() => window.open("https://lichess.org/@/oxidaks")}>
                                 <SiLichess className="icon" />

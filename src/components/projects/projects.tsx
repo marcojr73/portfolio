@@ -19,25 +19,25 @@ function Projects() {
         <ContainerProjects>
             <h1 id="projects" className="title">{t("projetos")}</h1>
             <section className="projects-square" >
-                <Slide duration={2000} direction="right" triggerOnce>
+                <Slide duration={1000} direction="right" triggerOnce>
                     <Project project={chegaLogoDto} />
                 </Slide>
-                <Slide duration={2000} direction="right" triggerOnce>
+                <Slide duration={1000} direction="right" triggerOnce>
                     <Project project={geoQuizDto} />
                 </Slide>
-                <Slide duration={2000} direction="right" triggerOnce>
+                <Slide duration={1000} direction="right" triggerOnce>
                     <Project project={wolfManager} />
                 </Slide>
-                <Slide duration={2000} direction="right" triggerOnce>
+                <Slide duration={1000} direction="right" triggerOnce>
                     <Project project={ngCashDto} />
                 </Slide>
-                <Slide duration={2000} direction="right" triggerOnce>
+                <Slide duration={1000} direction="right" triggerOnce>
                     <Project project={drivenPassDto} />
                 </Slide>
-                <Slide duration={2000} direction="right" triggerOnce>
+                <Slide duration={1000} direction="right" triggerOnce>
                     <Project project={linkrDto} />
                 </Slide>
-                <Slide duration={2000} direction="right" triggerOnce>
+                <Slide duration={1000} direction="right" triggerOnce>
                     <Project project={tweterooDto} />
                 </Slide>
             </section>

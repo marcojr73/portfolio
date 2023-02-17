@@ -186,14 +186,15 @@ const ContainerAside = styled.aside`
     @media only screen and (max-width: 614px){
         width: 100vw;
         position: relative;
-    }
+        
+        img{
+            width: 50%;
+        }
 
-    img{
-        width: 50%;
-    }
-
-    .acronyms{
-        font-size: 2.4rem;
+        .wrapper .dynamic {
+            height: 55%;
+        }
+        
     }
 `
 

@@ -2,7 +2,6 @@ import React, { useContext } from "react"
 import ContainerAside from "../styles/containers/ContainerAside"
 
 import { BsGithub, BsLinkedin, BsMoonStarsFill, BsSunFill, BsWhatsapp } from "react-icons/bs"
-import { SiLichess } from "react-icons/si"
 import Switch from "react-switch"
 import { useTranslation } from "react-i18next"
 import { themeContext } from "../context/themeContext"
