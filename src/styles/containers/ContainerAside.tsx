@@ -99,7 +99,7 @@ const ContainerAside = styled.aside`
     
     img{
         border-radius: 50%;
-        width: 70%;
+        width: 50%;
         margin-top: 10%;
     }
 
@@ -186,16 +186,13 @@ const ContainerAside = styled.aside`
     @media only screen and (max-width: 614px){
         width: 100vw;
         position: relative;
-        
-        img{
-            width: 50%;
-        }
 
         .wrapper .dynamic {
             height: 55%;
         }
-        
     }
+
+    
 `
 
 export default ContainerAside
