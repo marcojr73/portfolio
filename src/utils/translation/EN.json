@@ -16,6 +16,7 @@
         "wolf-description": "Full stack application. Cashier front manager, you can register your company, register products, view your sales statistics and new customers for the last 12 months in a safe and intuitive way.",
         "tt-description": "Api in Java Spring boot, a CRUD, where you can publish, read, edit and delete a tweet.",
         "chega logo description": "Full stack application, based on authentication. the user can manage a logo of the shipping company, uploading spreadsheets with data on delivery locations, register, delete and view truck information.",
+        "tracklit-description": "Flutter application using the BloC for state management, you can create a habit by choosing the days you want to practice it, view the habits and information you have for today, mark and unmark a habit as done, in addition to viewing it in a calendar which days you practiced or not all the habits.",
         "contact-1": "Let's Make Something great,",
         "contact-2": "Together!",
         "contact-me": "Feel free to connect with me",

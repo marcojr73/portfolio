@@ -9,8 +9,9 @@ import ngCashDto from "../../dtos/projects/ngCashDto"
 import tweterooDto from "../../dtos/projects/tweterooDto"
 import drivenPassDto from "../../dtos/projects/drivenPassDto"
 import linkrDto from "../../dtos/projects/linkrDto"
-import { Fade, Slide } from "react-awesome-reveal"
+import { Slide } from "react-awesome-reveal"
 import chegaLogoDto from "../../dtos/projects/chegaLogoDto"
+import tracklitDto from "../../dtos/projects/tracklitDto"
 
 
 function Projects() {
@@ -23,10 +24,13 @@ function Projects() {
                     <Project project={chegaLogoDto} />
                 </Slide>
                 <Slide duration={1000} direction="right" triggerOnce>
-                    <Project project={geoQuizDto} />
+                    <Project project={tracklitDto} />
                 </Slide>
                 <Slide duration={1000} direction="right" triggerOnce>
                     <Project project={wolfManager} />
+                </Slide>
+                <Slide duration={1000} direction="right" triggerOnce>
+                    <Project project={geoQuizDto} />
                 </Slide>
                 <Slide duration={1000} direction="right" triggerOnce>
                     <Project project={ngCashDto} />

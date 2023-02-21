@@ -17,7 +17,7 @@ const ContainerProjects = styled.section`
         width: 100%;
         height: 35vh;
         display: flex;
-        margin-bottom: 3%;
+        margin-bottom: 4%;
         transition-duration: 0.4s;
     }
 
@@ -26,15 +26,13 @@ const ContainerProjects = styled.section`
         height: 100%;
         position: relative;
         transition-duration: 0.4s;
-    }
-
-    .carousel { 
         transition: all 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550); 
-        z-index: 1;
+        z-index: 5;
+        background-color: var(--secondary-color);
     }
 
     .carousel:hover{ 
-        transform: scale(1.2); 
+        transform: scale(1.3); 
     }
 
     .icon{
@@ -62,8 +60,13 @@ const ContainerProjects = styled.section`
     }
 
     img{
-        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        max-width: 100%;
         height: 100%;
+        z-index: -1;
     }
 
     .description{

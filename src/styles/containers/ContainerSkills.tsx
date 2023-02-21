@@ -32,8 +32,7 @@ const ContainerSkills = styled.section`
     li:hover{
         border-bottom: 12px solid var(--primary-color);
         text-shadow: 0 0 8px var(--primary-color), 0 0 8px var(--primary-color);
-        transition-duration: 0.8s;
-        transition-timing-function: ease-in-out;
+        transition-duration: 0.4s;
     }
     
     p{
