@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { useTranslation } from "react-i18next"
 import ContainerProjects from "../../styles/containers/ContainerProjects"
 import Project from "./Project"
@@ -16,6 +16,8 @@ import tracklitDto from "../../dtos/projects/tracklitDto"
 
 function Projects() {
     const { t } = useTranslation()
+    const [hidden, setHidden] = useState(true)
+
     return (
         <ContainerProjects>
             <h1 id="projects" className="title">{t("projetos")}</h1>
@@ -32,6 +34,8 @@ function Projects() {
                 <Slide duration={1000} direction="right" triggerOnce>
                     <Project project={geoQuizDto} />
                 </Slide>
+            </section>
+            <section className={`projects-square ${hidden ? "hidden": ""}`}>
                 <Slide duration={1000} direction="right" triggerOnce>
                     <Project project={ngCashDto} />
                 </Slide>
@@ -45,6 +49,7 @@ function Projects() {
                     <Project project={tweterooDto} />
                 </Slide>
             </section>
+            <button onClick={() => setHidden(!hidden)}>{hidden ? "Mostrar mais" : "Mostrar menos"}</button>
         </ContainerProjects>
     )
 }

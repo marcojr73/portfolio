@@ -39,6 +39,7 @@ const ContainerSkills = styled.section`
         margin-top: 8%;
         font-size: 2rem;
         text-align: center;
+        cursor: default;
     }
     
     .icon {

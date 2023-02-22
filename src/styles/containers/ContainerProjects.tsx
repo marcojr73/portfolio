@@ -3,13 +3,32 @@ import styled from "styled-components"
 const ContainerProjects = styled.section`
     width: 82.5vw;
     margin-left: 17vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15vh;
+
+    h1{
+        margin-bottom: 7vh;
+    }
 
     .projects-square{
         width: 80%;
-        height: 80%;
         margin: auto;
-        margin-top: 5%;
-        border-radius: 10px;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    button{
+        width: 20%;
+        height: 5vh;
+        border-radius: 5px;
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        border: 2px solid var(--secondary-color);
+        font-size: 1.1rem;
     }
 
     .project{
@@ -17,7 +36,7 @@ const ContainerProjects = styled.section`
         width: 100%;
         height: 35vh;
         display: flex;
-        margin-bottom: 4%;
+        margin-bottom: 5%;
         transition-duration: 0.4s;
     }
 

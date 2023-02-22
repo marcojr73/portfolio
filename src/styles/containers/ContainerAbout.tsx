@@ -25,6 +25,7 @@ const ContainerAbout = styled.section`
     p{
         margin-top: 7%;
         font-size: 1.5rem;
+        cursor: default;
     }
 
     a{
