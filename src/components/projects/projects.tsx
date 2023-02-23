@@ -18,15 +18,23 @@ function Projects() {
     const { t } = useTranslation()
     const [hidden, setHidden] = useState(true)
 
+    function toggleHidden(){
+        setHidden(!hidden)
+        if(!hidden){
+            document.getElementById("hidden")?.scrollIntoView({ behavior: "smooth" })
+        }
+    }
+
     return (
         <ContainerProjects>
             <h1 id="projects" className="title">{t("projetos")}</h1>
-            <section className="projects-square" >
+            <section className={`projects-square ${hidden ? "hidden" : ""}`} >
                 <Slide duration={1000} direction="right" triggerOnce>
                     <Project project={chegaLogoDto} />
                 </Slide>
                 <Slide duration={1000} direction="right" triggerOnce>
                     <Project project={tracklitDto} />
+                    <div id="hidden"></div>
                 </Slide>
                 <Slide duration={1000} direction="right" triggerOnce>
                     <Project project={wolfManager} />
@@ -34,8 +42,6 @@ function Projects() {
                 <Slide duration={1000} direction="right" triggerOnce>
                     <Project project={geoQuizDto} />
                 </Slide>
-            </section>
-            <section className={`projects-square ${hidden ? "hidden": ""}`}>
                 <Slide duration={1000} direction="right" triggerOnce>
                     <Project project={ngCashDto} />
                 </Slide>
@@ -49,7 +55,7 @@ function Projects() {
                     <Project project={tweterooDto} />
                 </Slide>
             </section>
-            <button onClick={() => setHidden(!hidden)}>{hidden ? "Mostrar mais" : "Mostrar menos"}</button>
+            <button onClick={() => toggleHidden()}>{hidden ? "Mostrar mais" : "Mostrar menos"}</button>
         </ContainerProjects>
     )
 }

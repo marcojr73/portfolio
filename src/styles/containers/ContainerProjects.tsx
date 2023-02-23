@@ -13,13 +13,17 @@ const ContainerProjects = styled.section`
     }
 
     .projects-square{
-        width: 80%;
+        width: 100%;
         margin: auto;
+        height: 350vh;
+        overflow: hidden;
+        transition: height 1.2s;
     }
 
     .hidden{
-        display: none;
+        height: 175vh;
     }
+
 
     button{
         width: 20%;
@@ -33,10 +37,10 @@ const ContainerProjects = styled.section`
 
     .project{
         background-color: var(--secondary-color);
-        width: 100%;
+        width: 80%;
         height: 35vh;
         display: flex;
-        margin-bottom: 5%;
+        margin: 5% auto;
         transition-duration: 0.4s;
     }
 
