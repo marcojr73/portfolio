@@ -46,30 +46,36 @@ function Contact() {
                     <section className="social-box">
                         <h2>{t("contact-me")}</h2>
                         <div className="social">
-                            <div className="media" onClick={() => window.open("https://www.linkedin.com/in/marcojr73/")}>
+                            <li className="media" onClick={() => window.open("https://www.linkedin.com/in/marcojr73/")}>
+                                <span></span><span></span><span></span><span></span>
                                 <BsLinkedin className="icon" />
                                 <p>Linkedin</p>
-                            </div>
-                            <div className="media" onClick={() => window.open("https://github.com/marcojr73")}>
+                            </li>
+                            <li className="media" onClick={() => window.open("https://github.com/marcojr73")}>
+                                <span></span><span></span><span></span><span></span>
                                 <BsGithub className="icon" />
                                 <p>GitHub</p>
-                            </div>
-                            <div className="media" onClick={() => window.open("https://wa.me/5532984640142?")}>
+                            </li>
+                            <li className="media" onClick={() => window.open("https://wa.me/5532984640142?")}>
+                                <span></span><span></span><span></span><span></span>
                                 <BsWhatsapp className="icon" />
                                 <p>Whatsapp</p>
-                            </div>
-                            <div className="media" onClick={() => window.open("mailto:marco.junior@engenharia.ufjf.br")}>
+                            </li>
+                            <li className="media" onClick={() => window.open("mailto:marco.junior@engenharia.ufjf.br")}>
+                                <span></span><span></span><span></span><span></span>
                                 <MdOutlineMailOutline className="icon" />
                                 <p>Email</p>
-                            </div>
-                            <div className="media" onClick={() => window.open("https://lichess.org/@/oxidaks")}>
+                            </li>
+                            <li className="media" onClick={() => window.open("https://lichess.org/@/oxidaks")}>
+                                <span></span><span></span><span></span><span></span>
                                 <SiLichess className="icon" />
                                 <p>Lichess</p>
-                            </div>
-                            <div className="media" onClick={() => window.open("https://www.op.gg/summoners/br/FiatUno2013")}>
+                            </li>
+                            <li className="media" onClick={() => window.open("https://www.op.gg/summoners/br/FiatUno2013")}>
+                                <span></span><span></span><span></span><span></span>
                                 <SiRiotgames className="icon" />
                                 <p>League of Legends</p>
-                            </div>
+                            </li>
                         </div>
                     </section>
                 </section>

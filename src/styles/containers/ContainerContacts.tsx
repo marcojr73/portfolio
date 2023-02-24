@@ -111,13 +111,15 @@ const ContainerContacts = styled.section`
         align-items: center;
         border-radius: 8px;
         cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        color: var(--primary-color);
     }
 
     .media:hover{
-        color: var(--primary-color);
         text-shadow: 0 0 4px var(--primary-color), 0 0 8px var(--primary-color);
         transition-duration: 0.8s;
-        transition-timing-function: ease-in-out;
+        transition-timing-function: ease-out;
     }
 
     .fade{
