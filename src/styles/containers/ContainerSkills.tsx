@@ -51,7 +51,7 @@ const ContainerSkills = styled.section`
     li:hover span:first-of-type{
         position: absolute; 
         top: 0;
-        right: 0px;
+        left: 0px;
         width: 100%;
         height: 3px;
         background: linear-gradient(to right, transparent, var(--primary-color));
@@ -65,7 +65,8 @@ const ContainerSkills = styled.section`
         width: 3px;
         height: 100%;
         background: linear-gradient(to bottom, transparent, var(--primary-color));
-        animation: slider2 2s 1s linear infinite;
+        animation: slider2 2s linear infinite;
+        animation-delay: -1s;
     }
 
     li:hover span:nth-of-type(3){
@@ -85,7 +86,8 @@ const ContainerSkills = styled.section`
         width: 3px;
         height: 100%;
         background: linear-gradient(to top, transparent, var(--primary-color));
-        animation: slider4 2s 1s linear infinite;
+        animation: slider4 2s linear infinite;
+        animation-delay: -1s;
     }
 
     @keyframes slider1 {
