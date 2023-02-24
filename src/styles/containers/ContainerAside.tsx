@@ -28,6 +28,12 @@ const ContainerAside = styled.aside`
         overflow: hidden;
     }
 
+    .dynamic ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
     .wrapper .dynamic li{
         font-size: 2rem; 
         position: relative;

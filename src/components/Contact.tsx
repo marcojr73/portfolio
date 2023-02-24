@@ -15,13 +15,15 @@ function Contact() {
 
     const sendEmail = (e: any) => {
         e.preventDefault()
-        try {
-            emailjs.sendForm(import.meta.env.VITE_APP_SERVICE_ID, import.meta.env.VITE_APP_TEMPLATE_ID, e.target, import.meta.env.VITE_APP_PUBLIC_KEY)
-            toast("Mensagem enviada")
-        } catch (error) {
-            toast.error("Ocorreu um erro ao enviar a mensagem")
-        }
-        e.target.reset()
+        if (e.target[0].value && e.target[1].value) {
+            try {
+                emailjs.sendForm(import.meta.env.VITE_APP_SERVICE_ID, import.meta.env.VITE_APP_TEMPLATE_ID, e.target, import.meta.env.VITE_APP_PUBLIC_KEY)
+                toast("Mensagem enviada")
+            } catch (error) {
+                toast.error("Ocorreu um erro ao enviar a mensagem")
+            }
+            e.target.reset()
+        } else toast.error("Vocẽ não preencheu corretamente os campos")
     }
 
 
@@ -72,7 +74,7 @@ function Contact() {
                     </section>
                 </section>
             </footer>
-        </ContainerContacts>
+        </ContainerContacts >
     )
 }
 

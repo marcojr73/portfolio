@@ -141,6 +141,17 @@ const ContainerProjects = styled.section`
 
         .projects-square{
             width: 100%;
+            height: 430vh;
+        }
+
+        button{
+            margin: 5%;
+            width: 50%;
+            font-size: 1rem;
+        }
+
+        .hidden{
+            height: 210vh;
         }
 
         .project-title{
@@ -161,6 +172,7 @@ const ContainerProjects = styled.section`
             flex-direction: column;
             height: 50vh;
             margin-bottom: 30px;
+            width: 100%;
         }
 
         .carousel, .description{
