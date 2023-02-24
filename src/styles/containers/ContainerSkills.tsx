@@ -5,6 +5,8 @@ const ContainerSkills = styled.section`
     height: 100vh;
     margin-left: 17vw;
 
+    
+
     ul{
         margin: auto;
         margin-top: 3%;
@@ -28,12 +30,6 @@ const ContainerSkills = styled.section`
         position: relative;
         overflow: hidden;
     }
-
-    li:hover{
-        border-bottom: 12px solid var(--primary-color);
-        text-shadow: 0 0 8px var(--primary-color), 0 0 8px var(--primary-color);
-        transition-duration: 0.4s;
-    }
     
     p{
         margin-top: 8%;
@@ -50,6 +46,82 @@ const ContainerSkills = styled.section`
     .styled{
         margin-top: 5%;
         font-size: 5rem;
+    }
+
+    li:hover span:first-of-type{
+        position: absolute; 
+        top: 0;
+        right: 0px;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(to right, transparent, var(--primary-color));
+        animation: slider1 2s linear infinite;
+    }
+
+    li:hover span:nth-of-type(2){
+        position: absolute; 
+        top: 0;
+        right: 0;
+        width: 3px;
+        height: 100%;
+        background: linear-gradient(to bottom, transparent, var(--primary-color));
+        animation: slider2 2s 1s linear infinite;
+    }
+
+    li:hover span:nth-of-type(3){
+        position: absolute; 
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(to left, transparent, var(--primary-color));
+        animation: slider3 2s linear infinite;
+    }
+
+    li:hover span:last-of-type{
+        position: absolute; 
+        bottom: 0;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        background: linear-gradient(to top, transparent, var(--primary-color));
+        animation: slider4 2s 1s linear infinite;
+    }
+
+    @keyframes slider1 {
+        0%{
+            transform: translateX(-100%);
+        }
+        100%{
+            transform: translateX(100%);
+        }
+    }
+
+    @keyframes slider2 {
+        0%{
+            transform: translatey(-100%); 
+        }
+        100%{
+            transform: translatey(100%);
+        }
+    }
+
+    @keyframes slider3 {
+        0%{
+            transform: translateX(100%);
+        }
+        100%{
+            transform: translatex(-100%);
+        }
+    }
+
+    @keyframes slider4 {
+        0%{
+            transform: translatey(100%); 
+        }
+        100%{
+            transform: translatey(-100%);
+        }
     }
 
     @media only screen and (max-width: 614px){
