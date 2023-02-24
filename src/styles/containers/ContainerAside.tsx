@@ -134,6 +134,7 @@ const ContainerAside = styled.aside`
         align-items: center;
         border-top: 1px solid var(--primary-color);
         cursor: pointer;
+        overflow: visible;
     }
     
     .list-item:last-child{
