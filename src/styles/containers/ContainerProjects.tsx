@@ -15,7 +15,6 @@ const ContainerProjects = styled.section`
     .projects-square{
         width: 100%;
         margin: auto;
-        height: 350vh;
         overflow: hidden;
         transition: height 1.2s;
     }
@@ -23,7 +22,6 @@ const ContainerProjects = styled.section`
     .hidden{
         height: 175vh;
     }
-
 
     button{
         width: 20%;
@@ -40,7 +38,7 @@ const ContainerProjects = styled.section`
         width: 80%;
         height: 35vh;
         display: flex;
-        margin: 5% auto;
+        margin: 3% auto 5% auto;
         transition-duration: 0.4s;
     }
 

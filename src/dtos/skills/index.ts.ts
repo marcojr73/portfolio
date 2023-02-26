@@ -1,7 +1,7 @@
-import {FaReact, FaNodeJs, FaLinux, FaJava} from "react-icons/fa"
-import {SiTypescript, SiJavascript, SiNextdotjs, SiStyledcomponents, SiFlutter, SiDart, SiPostgresql, SiMongodb, SiPrisma, SiJest, SiSpring, SiCypress} from "react-icons/si"
-import {GrDocker} from "react-icons/gr"
-import {TbBrandGit} from "react-icons/tb"
+import { FaReact, FaNodeJs, FaLinux, FaJava } from "react-icons/fa"
+import { SiTypescript, SiJavascript, SiNextdotjs, SiStyledcomponents, SiFlutter, SiDart, SiPostgresql, SiMongodb, SiPrisma, SiJest, SiSpring, SiCypress, SiNestjs } from "react-icons/si"
+import { GrDocker } from "react-icons/gr"
+import { TbBrandGit } from "react-icons/tb"
 
 export default [
     {
@@ -15,6 +15,10 @@ export default [
     {
         title: "Typescript",
         icon: SiTypescript
+    },
+    {
+        title: "Nest.js",
+        icon: SiNestjs
     },
     {
         title: "Node.js",
@@ -59,10 +63,6 @@ export default [
     {
         title: "Docker",
         icon: GrDocker
-    },
-    {
-        title: "Linux",
-        icon: FaLinux
     },
     {
         title: "Git",

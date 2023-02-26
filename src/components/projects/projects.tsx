@@ -18,9 +18,9 @@ function Projects() {
     const { t } = useTranslation()
     const [hidden, setHidden] = useState(true)
 
-    function toggleHidden(){
+    function toggleHidden() {
         setHidden(!hidden)
-        if(!hidden){
+        if (!hidden) {
             document.getElementById("hidden")?.scrollIntoView({ behavior: "smooth" })
         }
     }

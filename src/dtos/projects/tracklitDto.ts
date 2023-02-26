@@ -4,7 +4,7 @@ import screen4 from "../../assets/images/tracklit/screen3.jpg"
 import screen5 from "../../assets/images/tracklit/screen4.jpg"
 import screen6 from "../../assets/images/tracklit/screen5.jpg"
 
-import { SiFlutter, SiDart} from "react-icons/si"
+import { SiFlutter, SiDart, SiNestjs} from "react-icons/si"
 
 export default {
     title: "Tracklit",
@@ -19,6 +19,7 @@ export default {
     technologies: [
         SiFlutter, 
         SiDart,
+        SiNestjs
     ],
     link: "https://github.com/marcojr73/tracklit-flutter"
 }
