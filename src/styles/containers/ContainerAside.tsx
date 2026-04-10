@@ -10,15 +10,13 @@ const ContainerAside = styled.aside`
     justify-content: space-between;
     border-right: 1px solid var(--primary-color);
 
-    .wrapper{
+    .wrapper {
         display: flex;
         justify-content: center;
-        align-items: center;
         width: 100%;
-        overflow: hidden;
     }
 
-    .static{
+    .static {
         font-size: 2rem;
     }
 
@@ -30,21 +28,24 @@ const ContainerAside = styled.aside`
 
     .dynamic ul {
         display: flex;
+        height: 120px;
         flex-direction: column;
         justify-content: space-between;
     }
 
-    .wrapper .dynamic li{
-        font-size: 2rem; 
+    .wrapper .dynamic li {
+        text-wrap: nowrap;
+        font-size: 2rem;
         position: relative;
         top: 0;
+        height: 100%;
         animation: slider 8s steps(4) infinite;
     }
-    
+
     @keyframes slider {
-        100%{
-            top: -8rem;
-        }        
+        100% {
+            top: -100%;
+        }
     }
 
     .wrapper .dynamic li::after {
@@ -57,27 +58,27 @@ const ContainerAside = styled.aside`
         border-left: 2px solid white;
         animation: typing-bar 2s steps(10) infinite;
     }
-    
+
     @keyframes typing-bar {
-        40%, 60%{
+        40%, 60% {
             left: 99.5%;
-        }   
-        100%{
+        }
+        100% {
             left: 0;
-        }     
+        }
     }
 
-    .wrapper .dynamic li:nth-child(4)::after{
+    .wrapper .dynamic li:nth-child(4)::after {
         animation-name: typing-bar-shrink;
     }
-    
+
     @keyframes typing-bar-shrink {
-        40%, 60%{
+        40%, 60% {
             left: 70%;
-        }   
-        100%{
+        }
+        100% {
             left: 0;
-        }  
+        }
     }
 
     header, .list, .list-item, .presets, .language, .switch {
@@ -91,9 +92,9 @@ const ContainerAside = styled.aside`
     .list, .list-item, .presets {
         justify-content: center;
     }
-    
 
-    header{
+
+    header {
         width: 100%;
         height: 40vh;
         background-color: var(--primary-color);
@@ -103,25 +104,25 @@ const ContainerAside = styled.aside`
         font-family: "Amatic SC";
         cursor: default;
     }
-    
-    img{
+
+    img {
         border-radius: 50%;
         width: 50%;
         margin-top: 10%;
     }
 
-    p{
+    p {
         font-size: 2rem;
         text-align: center;
     }
 
-    
-    h1{
+
+    h1 {
         font-weight: bold;
         font-size: 3rem;
     }
 
-    .list{
+    .list {
         padding-top: 15%;
         width: 100%;
         height: 45vh;
@@ -129,75 +130,81 @@ const ContainerAside = styled.aside`
         color: var(--text-color);
     }
 
-    .list-item{
+    .list-item {
         height: 15%;
         align-items: center;
         border-top: 1px solid var(--primary-color);
         cursor: pointer;
         overflow: visible;
     }
-    
-    .list-item:last-child{
+
+    .list-item:last-child {
         padding-top: 13%;
     }
 
-    .list-item:hover{
+    .list-item:hover {
         box-shadow: inset 0px 11px 8px -10px var(--primary-color),
-                    inset 0px -11px 8px -10px var(--primary-color); ;
+        inset 0px -11px 8px -10px var(--primary-color);;
         transition-duration: 0.4s;
         transition-timing-function: ease-in-out;
     }
 
-    .social:hover{
+    .social:hover {
         box-shadow: none;
     }
-    
-    .icon{
+
+    .icon {
         margin: 0 1rem 0 1rem;
         font-size: 1.5rem;
         color: var(--primary-color);
         cursor: pointer
     }
 
-    h1:hover, .wrapper:hover{
+    h1:hover, .wrapper:hover {
         text-shadow: 0 0 8px #FFF;
         transition-duration: 0.4s;
         transition-timing-function: ease-in-out;
     }
 
-    .presets{
+    .presets {
         width: 100%;
         height: 15vh;
         align-items: center;
     }
 
-    .language{
+    .language {
         padding-bottom: 5%;
     }
 
-    button{
+    button {
         width: 3rem;
         height: 1.8rem;
         margin-left: 0.5rem;
         border-radius: 3px;
     }
 
-    .switch{
+    .switch {
         margin-bottom: 10%;
     }
 
-    .icon-theme{
+    .icon-theme {
         font-size: 1.2rem;
         margin-left: 12%;
         margin-top: 10%;
         color: var(--dark-color);
     }
 
-    .selected{
+    .selected {
         background-color: var(--primary-color);
     }
 
-    @media only screen and (max-width: 614px){
+    @media screen and (max-width: 1600px) {
+        .wrapper .dynamic li, .static {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media only screen and (max-width: 614px) {
         width: 100vw;
         position: relative;
 
@@ -206,7 +213,7 @@ const ContainerAside = styled.aside`
         }
     }
 
-    
+
 `
 
 export default ContainerAside
